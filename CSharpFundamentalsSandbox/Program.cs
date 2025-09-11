@@ -7,9 +7,9 @@ namespace CSharpFundamentalsSandbox
     {
         public static void Main(string[] args)
         {
-            var conditionalLogicTests = new Conditionals();
-            
-            conditionalLogicTests.IsNumberBetweenOneAndTen();
+            var controlFlowTest = new ControlFlow();
+
+            controlFlowTest.FindMaxNumber();
         }
     }
 }
