@@ -10,7 +10,7 @@ namespace CSharpFundamentalsSandbox
         {
             var Lists = new ListKatas();
                 
-                Lists.Exercise1();
+                Lists.Exercise2();
         }
     }
 }

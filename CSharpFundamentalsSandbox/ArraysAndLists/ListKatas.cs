@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CSharpFundamentalsSandbox.ArraysAndLists
 {
@@ -52,6 +53,24 @@ namespace CSharpFundamentalsSandbox.ArraysAndLists
         // 2- Write a program and ask the user to enter their name.
         // Use an array to reverse the name and then store the result in a new string.
         // Display the reversed name on the console.
+        public void Exercise2()
+        {
+            Console.Write("Enter your name: ");
+            var input = Console.ReadLine();
+
+            var nameArray = input.ToCharArray();
+            Array.Reverse(nameArray);
+
+            var reversedName = "";
+
+            foreach (var element in nameArray)
+            {
+                reversedName = reversedName + element;
+            }
+            
+            Console.WriteLine(reversedName);
+
+        }
 
 
 
