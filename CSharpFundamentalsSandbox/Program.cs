@@ -8,8 +8,8 @@ namespace CSharpFundamentalsSandbox
         public static void Main(string[] args)
         {
             var controlFlowTest = new ControlFlow();
-            
-            controlFlowTest.GetFactorialOfNumber();
+
+            controlFlowTest.FindMaxNumber();
         }
     }
 }

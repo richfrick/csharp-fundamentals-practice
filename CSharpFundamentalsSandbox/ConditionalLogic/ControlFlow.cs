@@ -50,5 +50,41 @@ namespace CSharpFundamentalsSandbox.ConditionalLogic
   
             
         }
+
+        public void GuessSecretNumber()
+        {
+            var numberBetweenOneAndTen = new Random().Next(1, 10);
+                Console.WriteLine(numberBetweenOneAndTen);
+
+                for (var i = 0; i < 4; i++)
+                {
+                    Console.Write("Guess a number between 1 and 10: ");
+                    var guessedNumber = Convert.ToInt32(Console.ReadLine());
+
+                    if (guessedNumber != numberBetweenOneAndTen) continue;
+                    Console.WriteLine("You won");
+                    return;
+
+                }
+                Console.WriteLine("You Lost");
+        }
+
+        public void FindMaxNumber()
+        {
+            Console.Write("Enter a list of comma seperated numbers: ");
+            var input = Console.ReadLine();
+            var numbers = input.Split(',');
+            var maxNumber = Convert.ToInt32(numbers[0]);
+
+            foreach (var number in numbers)
+            {
+                var currentNumber = Convert.ToInt32(number);
+                if (maxNumber < currentNumber)
+                {
+                    maxNumber = currentNumber;
+                }
+            }
+            Console.WriteLine("max number is " + maxNumber);
+        }
     }
 }
