@@ -29,7 +29,7 @@ namespace CSharpFundamentalsSandbox.ConditionalLogic
         {
             return heightInInches > widthInInches ? "Portrait" : "Landscape";
         }
-
+        
         public void SpeedCamera()
         {
             while (true)
@@ -37,17 +37,17 @@ namespace CSharpFundamentalsSandbox.ConditionalLogic
                 Console.Write("What is the speed limit in kph: ");
                 var limitInput = Console.ReadLine();
                 if (string.IsNullOrWhiteSpace(limitInput)) return; 
-
+        
                 Console.Write("What speed is the car travelling at in kph: ");
                 var speedInput = Console.ReadLine();
                 if (string.IsNullOrWhiteSpace(speedInput)) return;
-
+        
                 var speedLimit = Convert.ToInt32(limitInput);
                 var speed = Convert.ToInt64(speedInput);
-
-
+        
+        
                 var numberOfPenaltyPoints = (speed - speedLimit)/5;
-
+        
                 if (numberOfPenaltyPoints <= 0)
                 {
                     Console.WriteLine("OK");
@@ -63,10 +63,10 @@ namespace CSharpFundamentalsSandbox.ConditionalLogic
                     Console.WriteLine("Licence suspended!");
                     continue;
                 }
-
+        
                 break;
             }
-
+        
         }
     }
 }

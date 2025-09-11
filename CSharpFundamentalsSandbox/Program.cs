@@ -1,4 +1,5 @@
 using System;
+using CSharpFundamentalsSandbox.ArraysAndLists;
 using CSharpFundamentalsSandbox.ConditionalLogic;
 
 namespace CSharpFundamentalsSandbox
@@ -7,9 +8,9 @@ namespace CSharpFundamentalsSandbox
     {
         public static void Main(string[] args)
         {
-            var controlFlowTest = new ControlFlow();
-
-            controlFlowTest.FindMaxNumber();
+            var Lists = new ListKatas();
+                
+                Lists.Exercise1();
         }
     }
 }
