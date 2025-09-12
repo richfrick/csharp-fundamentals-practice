@@ -10,7 +10,7 @@ namespace CSharpFundamentalsSandbox
         {
             var text = new WorkingWithText();
                 
-                text.TextExercise1();
+                text.TextExercise2();
         }
     }
 }
