@@ -40,6 +40,7 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="ArraysAndLists\ListKatas.cs" />
         <Compile Include="ConditionalLogic\Conditionals.cs" />
         <Compile Include="ConditionalLogic\ControlFlow.cs" />
         <Compile Include="Program.cs"/>
