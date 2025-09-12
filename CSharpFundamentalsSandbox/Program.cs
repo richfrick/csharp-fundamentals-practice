@@ -8,9 +8,9 @@ namespace CSharpFundamentalsSandbox
     {
         public static void Main(string[] args)
         {
-            var Lists = new ListKatas();
+            var text = new WorkingWithText();
                 
-                Lists.Exercise2();
+                text.TextExercise1();
         }
     }
 }
