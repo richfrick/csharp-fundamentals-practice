@@ -55,6 +55,20 @@ namespace CSharpFundamentalsSandbox
         //If the time is valid, display "Ok"; otherwise, display "Invalid Time".
         //If the user doesn't provide any values, consider it as invalid time.
 
+        public void TextExercise3()
+        {
+            Console.Write("Enter the tim ein 24hr format e.g. (22:10)");
+            var input = Console.ReadLine();
+
+            var numberArray = input.Split(':');
+
+
+            if (numberArray.Length == 2 && numberArray[0].Length == 2 && numberArray[1].Length == 2)
+                Console.WriteLine("OK!");
+            else
+                Console.WriteLine("Invalid Time");
+        }
+
 
         //4- Write a program and ask the user to enter a few words separated by a space.
         //Use the words to create a variable name with PascalCase.
