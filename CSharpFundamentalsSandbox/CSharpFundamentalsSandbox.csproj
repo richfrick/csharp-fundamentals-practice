@@ -43,7 +43,9 @@
         <Compile Include="Katas\ArraysAndLists\ListKatas.cs"/>
         <Compile Include="Katas\ConditionalLogic\Conditionals.cs"/>
         <Compile Include="Katas\ConditionalLogic\ControlFlow.cs"/>
-        <Compile Include="Katas\OOP\Classes.cs"/>
+        <Compile Include="Katas\OOP\Classes\Post.cs"/>
+        <Compile Include="Katas\OOP\Classes\StopWatch.cs"/>
+        <Compile Include="Katas\OOP\Inheritance\Stack.cs"/>
         <Compile Include="Katas\Strings\WorkingWithText.cs"/>
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
