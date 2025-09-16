@@ -40,15 +40,13 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Katas\ArraysAndLists\ListKatas.cs" />
-        <Compile Include="Katas\ConditionalLogic\Conditionals.cs" />
-        <Compile Include="Katas\ConditionalLogic\ControlFlow.cs" />
-        <Compile Include="Katas\Strings\WorkingWithText.cs" />
+        <Compile Include="Katas\ArraysAndLists\ListKatas.cs"/>
+        <Compile Include="Katas\ConditionalLogic\Conditionals.cs"/>
+        <Compile Include="Katas\ConditionalLogic\ControlFlow.cs"/>
+        <Compile Include="Katas\OOP\Classes.cs"/>
+        <Compile Include="Katas\Strings\WorkingWithText.cs"/>
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Katas\" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
