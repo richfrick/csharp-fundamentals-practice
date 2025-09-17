@@ -1,5 +1,5 @@
 using System;
-using CSharpFundamentalsSandbox.Katas.OOP.Inheritance;
+using CSharpFundamentalsSandbox.Katas.OOP.Polymorphism;
 
 namespace CSharpFundamentalsSandbox
 {
@@ -19,23 +19,23 @@ namespace CSharpFundamentalsSandbox
 
         public static void Main(string[] args)
         {
-            var stack = new Stack();
-
-            Helper(() => stack.Push(1));
-            Helper(() => stack.Push(2));
-            Helper(() => stack.Push(3));
-
-            Helper(() => stack.Pop());
-            Helper(() => stack.Pop());
-            Helper(() => stack.Pop());
+            var oracleConnection1 = new OracleConnection("http.ORACLE-Connection.com", TimeSpan.FromMinutes(10));
+            oracleConnection1.OpenConnection();
+            oracleConnection1.CloseConnection();
             
-            Helper(() => stack.Clear());
+            var oracleConnection = new OracleConnection(null, TimeSpan.FromMinutes(10));
+            oracleConnection.OpenConnection();
+            oracleConnection.CloseConnection();
 
-            Helper(() => stack.Clear());
+            var sqlConnection1 = new SqlConnection("http.SQL-Connection.com", TimeSpan.FromMinutes(20));
+            sqlConnection1.OpenConnection();
+            sqlConnection1.CloseConnection();
             
-            Helper(() => stack.Push(null));
-
-            Helper(() => stack.Pop());
+            var sqlConnection0 = new SqlConnection(null, TimeSpan.FromMinutes(10));
+            sqlConnection1.OpenConnection();
+            sqlConnection1.CloseConnection();
+            
+            
         }
     }
 }
