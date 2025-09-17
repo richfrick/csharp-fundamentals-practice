@@ -46,6 +46,7 @@
         <Compile Include="Katas\OOP\Classes\Post.cs"/>
         <Compile Include="Katas\OOP\Classes\StopWatch.cs"/>
         <Compile Include="Katas\OOP\Inheritance\Stack.cs"/>
+        <Compile Include="Katas\OOP\Polymorphism\DbCommand.cs"/>
         <Compile Include="Katas\OOP\Polymorphism\DbConnection.cs"/>
         <Compile Include="Katas\OOP\Polymorphism\OracleConnection.cs"/>
         <Compile Include="Katas\OOP\Polymorphism\SqlConnection.cs"/>
