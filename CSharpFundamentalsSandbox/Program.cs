@@ -1,41 +1,38 @@
 using System;
-using CSharpFundamentalsSandbox.Katas.OOP.Inheritance;
+using CSharpFundamentalsSandbox.Katas.OOP.Polymorphism;
 
 namespace CSharpFundamentalsSandbox
 {
     internal class Program
     {
-        private static void Helper(Action action)
-        {
-            try
-            {
-                action();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-        }
+        // private static void Helper(Action action)
+        // {
+        //     try
+        //     {
+        //         action();
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         Console.WriteLine(e);
+        //     }
+        // }
 
         public static void Main(string[] args)
         {
-            var stack = new Stack();
+            //POLYMORPHISM
+            var oracleConnection = new OracleConnection("http.ORACLE-Connection.com", TimeSpan.FromMinutes(5));
 
-            Helper(() => stack.Push(1));
-            Helper(() => stack.Push(2));
-            Helper(() => stack.Push(3));
-
-            Helper(() => stack.Pop());
-            Helper(() => stack.Pop());
-            Helper(() => stack.Pop());
+            var dbCommand = new DbCommand(oracleConnection, "SEL * FROM DB_TEST");
+            dbCommand.Execute();
             
-            Helper(() => stack.Clear());
+            var sqlConnection = new OracleConnection("http.SQL-Connection.com");
 
-            Helper(() => stack.Clear());
-            
-            Helper(() => stack.Push(null));
+            var dbCommand1 = new DbCommand(sqlConnection, "SEL * FROM DB_TEST");
+            dbCommand1.Execute();
 
-            Helper(() => stack.Pop());
+
+
+
         }
     }
 }
