@@ -21,22 +21,21 @@ namespace CSharpFundamentalsSandbox
         {
             var stack = new Stack();
 
-            Helper(() => stack.Push("1"));
-            // Helper((() => stack.Push(2)));
-            // Helper((() => stack.Push(3)));
-            // Helper((() => stack.Push(4)));
-            //
-            // Helper((() => stack.Pop()));
-            // Helper((() => stack.Pop()));
-            // Helper((() => stack.Pop()));
+            Helper(() => stack.Push(1));
+            Helper(() => stack.Push(2));
+            Helper(() => stack.Push(3));
 
-            // Helper((() => stack.Clear()));
-            //
-            // Helper((() => stack.Clear()));
-        }
+            Helper(() => stack.Pop());
+            Helper(() => stack.Pop());
+            Helper(() => stack.Pop());
+            
+            Helper(() => stack.Clear());
 
-        public class TestClassGeneration
-        {
+            Helper(() => stack.Clear());
+            
+            Helper(() => stack.Push(null));
+
+            Helper(() => stack.Pop());
         }
     }
 }

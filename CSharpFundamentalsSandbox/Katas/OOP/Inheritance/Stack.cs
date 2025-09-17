@@ -40,7 +40,12 @@ namespace CSharpFundamentalsSandbox.Katas.OOP.Inheritance
         //boxing and unboxing occurs, which comes with a small performance penalty.
         //In my C# Advanced course, I’ll teach you how to resolve this by using generics, but for now don’t worry about it.
 
-        private ArrayList stackList;
+        private readonly ArrayList stackList;
+
+        public Stack()
+        {
+            stackList = new ArrayList();
+        }
 
         public void Push(object obj)
         {
@@ -55,7 +60,7 @@ namespace CSharpFundamentalsSandbox.Katas.OOP.Inheritance
             if (stackList.Count != 0)
             {
                 Console.WriteLine(stackList[0]);
-                stackList.Remove(0);
+                stackList.RemoveAt(0);
             }
             else
             {
