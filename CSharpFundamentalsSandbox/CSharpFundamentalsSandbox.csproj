@@ -46,7 +46,11 @@
         <Compile Include="Katas\OOP\Classes\Post.cs"/>
         <Compile Include="Katas\OOP\Classes\StopWatch.cs"/>
         <Compile Include="Katas\OOP\Inheritance\Stack.cs"/>
-        <Compile Include="Katas\OOP\Interfaces.cs" />
+        <Compile Include="Katas\OOP\Interfaces &amp; Polymorphism\CreateTicket.cs"/>
+        <Compile Include="Katas\OOP\Interfaces &amp; Polymorphism\IActivity.cs"/>
+        <Compile Include="Katas\OOP\Interfaces &amp; Polymorphism\MoveToInProgress.cs"/>
+        <Compile Include="Katas\OOP\Interfaces &amp; Polymorphism\ReadyForQa.cs"/>
+        <Compile Include="Katas\OOP\Interfaces &amp; Polymorphism\Workflow.cs"/>
         <Compile Include="Katas\OOP\Polymorphism\DbCommand.cs"/>
         <Compile Include="Katas\OOP\Polymorphism\DbConnection.cs"/>
         <Compile Include="Katas\OOP\Polymorphism\OracleConnection.cs"/>

@@ -1,6 +1,7 @@
-namespace CSharpFundamentalsSandbox.Katas.OOP
+using System.Collections.Generic;
+
+namespace CSharpFundamentalsSandbox.Katas.OOP.Interfaces___Polymorphism
 {
-    
     //Design a workflow engine that takes a workflow object and runs it. A workflow is a series of steps or activities.
     //The workflow engine class should have one method called Run() that takes a workflow, and then iterates over each activity in the workflow and runs it.
     //
@@ -26,9 +27,24 @@ namespace CSharpFundamentalsSandbox.Katas.OOP
     //Simply use Console.WriteLine() in each of your activity classes.
     //Your focus should be on sending a workflow to the workflow engine and having it run the workflow and all the activities inside it.
     //We don’t care about the actual activities.
-    
-    public class Interfaces
+
+    public class Workflow
     {
-        
+        private readonly IList<IActivity> _activityList;
+
+        public Workflow()
+        {
+            _activityList = new List<IActivity>();
+        }
+
+        public void RunWorkflow()
+        {
+            foreach (var activity in _activityList) activity.Execute();
+        }
+
+        public void AddActivityToWorkflow(IActivity activity)
+        {
+            _activityList.Add(activity);
+        }
     }
 }
