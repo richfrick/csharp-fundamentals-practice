@@ -2,7 +2,7 @@ using System;
 
 namespace CSharpFundamentalsSandbox.Katas.OOP.Interfaces___Polymorphism
 {
-    public class CreateTicket : IActivity
+    public class CreateTicket : ITask
     {
         public void Execute()
         {

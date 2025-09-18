@@ -29,12 +29,14 @@ namespace CSharpFundamentalsSandbox
             // var dbCommand1 = new DbCommand(sqlConnection, "SEL * FROM DB_TEST");
             // dbCommand1.Execute();
 
-            var workflow = new Workflow();
+            var workflow = new TicketWorkflow();
 
-            workflow.AddActivityToWorkflow(new CreateTicket());
-            workflow.AddActivityToWorkflow(new MoveToInProgress());
-            workflow.AddActivityToWorkflow(new ReadyForQa());
-            workflow.RunWorkflow();
+            workflow.Add(new CreateTicket());
+            workflow.Add(new MoveToInProgress());
+            workflow.Add(new ReadyForQa());
+
+            var workflowEngine = new WorkflowEngine();
+            workflowEngine.Run(workflow);
         }
     }
 }

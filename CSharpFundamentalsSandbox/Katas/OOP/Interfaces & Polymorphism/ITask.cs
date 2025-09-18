@@ -1,6 +1,6 @@
 namespace CSharpFundamentalsSandbox.Katas.OOP.Interfaces___Polymorphism
 {
-    public interface IActivity
+    public interface ITask
     {
         void Execute();
     }

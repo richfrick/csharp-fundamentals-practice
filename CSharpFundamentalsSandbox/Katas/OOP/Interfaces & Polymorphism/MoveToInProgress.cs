@@ -2,7 +2,7 @@ using System;
 
 namespace CSharpFundamentalsSandbox.Katas.OOP.Interfaces___Polymorphism
 {
-    public class MoveToInProgress : IActivity
+    public class MoveToInProgress : ITask
     {
         public void Execute()
         {
